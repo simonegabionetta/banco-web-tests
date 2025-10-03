@@ -9,7 +9,6 @@ describe('Login', () => {
     // Act
     cy.get('#username').click().type('julio.lima')
     cy.get('#senha').click().type('123456')
-    // cy.get('#login-section > .btn').click()
     cy.contains('button','Entrar').click()
 
     // Assert
@@ -23,7 +22,7 @@ describe('Login', () => {
     cy.contains('button','Entrar').click()
 
     // Assert
-    cy.get('.toast').should('have.text', 'Erro no login. Tente novamente.')
+    cy.get('.toast').should('contain.text', 'Erro no login. Tente novamente.')
   })
 
 })

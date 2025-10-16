@@ -5,10 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "cypress run",
-    "test-prod": "cypress run --env URL=http://www.juliolima.com.br",
-    "test-qa": "cypress run --env URL=qa-enviroment.juliolima.com.br",
-
-    "cy:headed":"cypress run --headed",
+    "test-prod": "cypress run",
+    "test-qa": "cypress run ",
+    "cy:headed":"cypress run ",
     "cy:open": "cypress open"
   },
   "repository": {

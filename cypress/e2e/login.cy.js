@@ -2,8 +2,7 @@ describe('Login', () => {
 
   beforeEach(() => {
     // Arrange
-    cy.visit('/')
-    
+    cy.visit('/')    
   })
 
   it('Login com dados válidos deve permitir entrada no sistema', () => {
@@ -30,5 +29,4 @@ describe('Login', () => {
     // Assert
     cy.get('.toast').should('contain.text', 'Erro no login. Tente novamente.')
   })
-
 })

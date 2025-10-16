@@ -7,7 +7,7 @@
     "test": "cypress run",
     "test-prod": "cypress run",
     "test-qa": "cypress run ",
-    "cy:headed":"cypress run ",
+    "cy:headed": "cypress run ",
     "cy:open": "cypress open"
   },
   "repository": {
@@ -23,5 +23,8 @@
   "homepage": "https://github.com/simonegabionetta/banco-web-tests#readme",
   "dependencies": {
     "cypress": "^15.3.0"
+  },
+  "devDependencies": {
+    "cypress-mochawesome-reporter": "^4.0.2"
   }
 }
